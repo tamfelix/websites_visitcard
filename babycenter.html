@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<style>
+
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    max-width: 1480px;
+    margin: auto;
+    position:absolute;
+
+}
+/* NAVIGATION */
+
+.logo{
+    background: url(img/8ef41168d2e3fbdcb54ff1f53098468d.jpeg) center / contain no-repeat;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 0px;
+    left: -20px;
+
+}
+
+
+.nav-box{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 110px;
+    top: -10px;
+    opacity: 0.8;
+    z-index: 7;
+}
+
+li{
+    display: inline-flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    font-size: 1rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    background: blue;
+    color: #fff;
+    text-align: center;
+}
+
+.li1{background: rgb(255, 230, 0);}
+.li2{background: rgb(109, 150, 16);}
+.li3{background: orange;}
+.li4{background: rgb(228, 68, 94);}
+.li5{background: red;}
+.li6{background: rgb(44, 138, 197);}
+.li7{background: navy;}
+.li8{background: rgb(51, 233, 233);}
+
+.litext{
+    padding-top: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* BODY BACKGROUND */
+.nuage_small{
+    width: 50px;
+    height: 50px;
+    background: url(img/nuage.png) center / contain no-repeat;
+    position: relative;
+    top: -5px;
+    left: 620px;
+}
+
+
+
+.nuage_big{
+    width: 120px;
+    height: 110px;
+    background: url(img/nuage.png) center / contain no-repeat;
+    position: relative;
+    top: 10px;
+    left: 50px;
+
+}
+
+
+.monkey{
+    background: url(img/baby-giraffe-colored.jpeg) center / contain;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 220px;
+    left: 660px;
+    opacity: 0.8;
+}
+
+
+
+
+.body-hearts, .body-hearts2{
+    width: 200px;
+    height: 100px;
+    background: url(img/hearts.png);
+    position: fixed;
+    top: 300px;
+    left: 600px;
+    z-index: 6;
+    transform: rotate(180deg);
+    opacity: 0.9;
+}
+
+
+.body-hearts2{
+    position: fixed;
+    top: 200px;
+    left: 450px; 
+    transform: rotate(180deg);
+}
+
+
+.body-circle{
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    background: rgb(154, 219, 219);
+    position: fixed;
+    top: -60px;
+    left:700px;
+  
+}
+.body-circle__text{
+    font-size: 2rem;
+    color: white;
+    z-index: 6;
+    position: relative;
+    top: 180px;
+    left: 150px;
+}
+
+
+.body-circle__text p{
+    font-size: 1.5rem;
+    width: 250px;
+}
+
+
+/* MAIN CONTENT */
+
+.body-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 700px;
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    color: rgb(88, 86, 86);
+}
+
+.body-container__text{
+    width: 250px;
+    padding: 20px;
+}
+
+    /* FOOTER */
+    
+
+    .footer-text{
+        width: max-content;
+        height: max-content;
+        position: fixed;
+        bottom:10px
+    }
+    
+    
+    
+    .footer-circle{
+    width: 2000px;
+    height: 1400px;
+    border-radius: 600px 1000px 0 50px;
+    background: rgba(68, 68, 136, 0.952);
+    position: fixed;
+    top: 1000px;
+    left:-300px;
+    color: #fff;
+    text-align: justify;
+
+ 
+
+}
+.footer-circle2{
+width: 200px;
+height: 200px;
+background: rgb(89, 192, 192);
+border: 10px solid white;
+border-radius: 200px;
+position: fixed;
+bottom:50px;
+left: 60px;
+
+}
+
+.footer-circle2__text{
+    color: #fff;
+    font-size: 1rem;
+    width: 110px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+span{
+    text-transform: uppercase;
+}
+
+
+
+footer ul{
+    margin: 440px 0 0 200px;
+    height: 100px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items:center;
+
+}
+
+footer li{
+    background:none;
+    border-radius: 0;
+    margin: 20px;
+}
+
+footer a{
+  
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+
+.footer-copyright{
+
+    color: rgb(159, 166, 209);
+    padding-left: 15px;
+    position: fixed;
+    bottom: 10px;
+}
+
+
+</style>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="logo"></div>    
+
+<div class="nuage_small"></div>
+
+
+
+<div class="nav">
+    <ul class="nav-box">
+        <li class="li1">
+           <a href="#" class="litext">Lorem.</a>
+        </li>
+        <li class="li2">
+            <a href="#" class="litext">Modi.</a>
+        </li>
+        <li  class="li3">
+            <a href="#" class="litext">Voluptates.</a>
+        </li>
+        <li class="li4">
+            <a href="#" class="litext">Amet.</a>
+        </li>
+        <li class="li5">
+            <a href="#" class="litext">Ad?</a>
+        </li>
+        <li class="li6">
+            <a href="#" class="litext">Fuga!</a>
+        </li>
+        <li class="li7">
+            <a href="#" class="litext">Iusto.</a>
+        </li>
+        <li class="li8">
+            <a href="#" class="litext">Earum.</a>
+        </li>
+    </ul>
+</div>
+
+<div class="nuage_big"></div>
+
+
+
+
+
+<!-- BACKGROUND BODY -->
+
+<div class="monkey"></div>
+
+
+<div class="body-hearts2"></div>
+<div class="body-hearts"></div>
+<div class="body-circle">
+    <div class="body-circle__text">
+        <h4>BABY CENTER</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo eius, consectetur suscipit pariatur quam!</p>
+    </div>
+</div>
+
+<main>
+    <div class="body-container">
+        <div class="body-container__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius exercitationem aliquid aliquam laudantium quaerat soluta itaque aspernatur voluptatum, tenetur quas quos blanditiis ratione delectus consectetur voluptatibus dolorum repudiandae ex ad! Rem repudiandae ad velit optio repellendus cumque, recusandae est soluta in sequi repellat accusamus, assumenda, alias qui. Corrupti ea ipsam alias hic ratione molestias aliquam unde quod doloribus quo enim minus eius architecto, magnam culpa labore. Explicabo laborum hic rem consequatur itaque in facere excepturi fugiat magni eaque eligendi assumenda mollitia unde error, porro cupiditate molestiae provident voluptatum ad. Dicta quia quaerat impedit, tempora nostrum consectetur architecto facilis doloribus
+        </div>
+    
+        <div class="body-container__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius exercitationem aliquid aliquam laudantium quaerat soluta itaque aspernatur voluptatum, tenetur quas quos blanditiis ratione delectus consectetur voluptatibus dolorum repudiandae ex ad! Rem repudiandae ad velit optio repellendus cumque, recusandae est soluta in sequi repellat accusamus, assumenda, alias qui. Corrupti ea ipsam alias hic ratione molestias aliquam unde quod doloribus quo enim minus eius architecto, magnam culpa labore. Explicabo laborum hic rem consequatur itaque in facere excepturi fugiat magni eaque eligendi assumenda mollitia unde error, porro cupiditate molestiae provident voluptatum ad. Dicta quia quaerat impedit, tempora nostrum consectetur architecto facilis doloribus?
+        </div>
+
+        <div class="body-container__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius exercitationem aliquid aliquam laudantium quaerat soluta itaque aspernatur voluptatum, tenetur quas quos blanditiis ratione delectus consectetur voluptatibus dolorum repudiandae ex ad! Rem repudiandae ad velit optio repellendus cumque, recusandae est soluta in sequi repellat accusamus, assumenda, alias qui. Corrupti ea ipsam alias hic ratione molestias aliquam unde quod doloribus quo enim minus eius architecto, magnam culpa labore. Explicabo laborum hic rem consequatur itaque in facere excepturi fugiat magni eaque eligendi assumenda mollitia unde error, porro cupiditate molestiae provident voluptatum ad. Dicta quia quaerat impedit, tempora nostrum consectetur architecto facilis doloribus?
+        </div>
+
+        <div class="body-container__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius exercitationem aliquid aliquam laudantium quaerat soluta itaque aspernatur voluptatum, tenetur quas quos blanditiis ratione delectus consectetur voluptatibus dolorum repudiandae ex ad! Rem repudiandae ad velit optio repellendus cumque, recusandae est soluta in sequi repellat accusamus, assumenda, alias qui. Corrupti ea ipsam alias hic ratione molestias aliquam unde quod doloribus quo enim minus eius architecto, magnam culpa labore. Explicabo laborum hic rem consequatur itaque in facere excepturi fugiat magni eaque eligendi assumenda mollitia unde error, porro cupiditate molestiae provident voluptatum ad. Dicta quia quaerat impedit, tempora nostrum consectetur architecto facilis doloribus?
+        </div>
+
+        <div class="body-container__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius exercitationem aliquid aliquam laudantium quaerat soluta itaque aspernatur voluptatum, tenetur quas quos blanditiis ratione delectus consectetur voluptatibus dolorum repudiandae ex ad! Rem repudiandae ad velit optio repellendus cumque, recusandae est soluta in sequi repellat accusamus, assumenda, alias qui. Corrupti ea ipsam alias hic ratione molestias aliquam unde quod doloribus quo enim minus eius architecto, magnam culpa labore. Explicabo laborum hic rem consequatur itaque in facere excepturi fugiat magni eaque eligendi assumenda mollitia unde error, porro cupiditate molestiae provident voluptatum ad. Dicta quia quaerat impedit, tempora nostrum consectetur architecto facilis doloribus?</div>
+        <div class="body-container__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius exercitationem aliquid aliquam laudantium quaerat soluta itaque aspernatur voluptatum, tenetur quas quos blanditiis ratione delectus consectetur voluptatibus dolorum repudiandae ex ad! Rem repudiandae ad velit optio repellendus cumque, recusandae est soluta in sequi repellat accusamus, assumenda, alias qui. Corrupti ea ipsam alias hic ratione molestias aliquam unde quod doloribus quo enim minus eius architecto, magnam culpa labore. Explicabo laborum hic rem consequatur itaque in facere excepturi fugiat magni eaque eligendi assumenda mollitia unde error, porro cupiditate molestiae provident voluptatum ad. Dicta quia quaerat impedit, tempora nostrum consectetur architecto facilis doloribus?
+        </div>
+</div>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="footer-circle"></div>
+    <div class="footer-circle2">
+        <div class="footer-circle2__text">
+            <span>Lorem ipsum dolor </span>
+            <p>sit amet Lorem ipsum dolor sit amet.</p> 
+        </div>
+    </div>
+    <div class="footer-text">
+        <ul>
+            <li><a href="#">Lorem, ipsum.</a></li>
+            <li><a href="#">Veniam, libero?</a></li>
+            <li><a href="#">Laboriosam, iusto!</a></li>
+            <li><a href="#">Incidunt, inventore?</a></li>
+            <li><a href="#">Impedit, ad!</a></li>
+            <li><a href="#">Perspiciatis, quis!</a></li>
+            <li><a href="#">Porro, iusto!</a></li>
+            <li><a href="#">Soluta, atque.</a></li>
+        </ul>   
+    </div>
+<small class="footer-copyright">&copy; lorem ipsum</small>
+</footer>
+</body>
+</html>
