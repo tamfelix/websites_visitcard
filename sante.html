@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:verdana;
+}
+
+/* HEADER */
+
+header{
+    margin-left: 10px;
+}
+
+
+.header-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background: rgb(36, 196, 196);
+    margin: 10px;
+}
+
+.header-circle_text{
+    margin: auto;
+    padding: 25%;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+.header-circle_line{
+    width: 40px;
+    height: 1px;
+    border: 1px solid white;
+    position: absolute;
+    top:115px;
+    left: 100px;
+    
+}
+
+
+.header-spoiler{
+    width: 500px;
+    height: 200px;
+}
+
+.btn-header{
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    background: rgb(43, 42, 42);
+    color: rgb(36, 196, 196);
+    text-transform: uppercase;
+    margin: 20px 10px 0 0;
+
+}
+
+/* NAVIGATION */
+
+.header-nav{
+    width: 400px;
+    height: 100px;
+    background: rgb(43, 42, 42);
+    border-radius: 0 0 0 25px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.699);
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* MAIN */
+
+main{
+    margin-left: 10px;
+}
+
+
+.main-lib{
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    width: 600px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-lib__book{
+    margin: 20px;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-lib__booktext{
+    margin: 0px 0 0 10px;
+}
+
+.main-lib_title{
+    margin-bottom: 5px;
+
+}
+
+.main-lib_photo{
+    height: 140px;
+    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.699);
+}
+
+
+
+/* ARTICLES SECTION */
+
+
+.main-container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+.article{
+margin: auto;
+}
+
+
+.aside{
+    background: rgb(43, 42, 42);
+    width: 140px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(270deg);
+    padding-top: 3px;
+    position: absolute;
+    right: -50px;
+    font-size: 0.9rem;
+    border-radius: 5px 5px 5px 0px;
+}
+
+.small-font{
+    font-size: 0.8rem;
+}
+
+
+/* FOOTER */
+
+.footer-banner{
+    height: 200px;
+    width: 100%;
+    background: rgb(36, 196, 196);
+   position: absolute;
+   bottom:0;
+   color: #fff;
+
+}
+
+.footer-banner_h{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-img{
+    margin: 20px;
+    box-shadow: 3px 3px 5px rgb(66, 104, 104);
+}
+
+.footer-nav{
+
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+
+}
+
+.footer-nav_li{
+    margin: 20px;
+    text-transform: lowercase;
+}
+
+
+</style>
+    <title>planete sante</title>
+</head>
+<body>
+
+<!-- LOGO CIRCLE -->
+
+    <header>
+    <div class="header-circle">
+        <p class="header-circle_text"> Lorem ipsum.</p>
+    </div>
+
+
+<div class="header-circle_line"></div>
+
+<!-- NAVIGATION -->
+
+    <div class="header-nav">
+        <ul>
+            <li>lorem</li>
+            <li>ipsum</li>
+            <li>here</li>
+            <li>we</li>
+            <li>go</li>
+            <li>now</li>
+        </ul>
+    </div>
+
+
+    <!-- SELECTED ARTICLES SECTION -->
+
+    <p class="header-spoiler">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro corrupti. Est esse nam numquam unde id repellat odit distinctio praesentium quo, deserunt inventore libero delectus ea voluptas suscipit eos molestiae commodi veniam voluptate similique provident. Praesentium quaerat perferendis ab reiciendis dolor. Qui, quibusdam? Qui possimus, quia nobis atque incidunt corrupti magni deleniti optio accusamus totam asperiores eos sapiente ad, tempora, consequuntur eum harum autem excepturi distinctio porro! Quis consectetur doloremque hic .</p>
+
+    <input type="button" class="btn-header" value="purchase now">
+</header>
+
+<!-- BOOKS SECTION -->
+
+<main>
+<div class="main-lib">
+    <div class="main-lib__book">
+        <img class="main-lib_photo" src="https://picsum.photos/100/130" alt="">
+        <div class="main-lib__booktext">
+            <h4 class="main-lib_title">Lorem, ipsum.</h3>
+            <p class="small-font">Lorem.</p>
+            <p class="small-font">Lorem.</p>
+            <p class="small-font">Lorem.</p>
+            <p class="small-font">Lorem.</p>
+        </div>
+    </div>
+    <div class="main-lib__book">
+        <img class="main-lib_photo" src="https://picsum.photos/100/130" alt="">
+        <div class="main-lib__booktext">
+            <h4 class="main-lib_title">Lorem, ipsum.</h4>
+            <p class="small-font">Lorem.</p>
+            <p class="small-font">Lorem.</p>
+            <p class="small-font">Lorem.</p>
+            <p class="small-font">Lorem.</p>
+        </div>
+    </div>
+    <div class="main-lib__book">
+        <img class="main-lib_photo" src="https://picsum.photos/100/130" alt="">
+        <div class="main-lib__booktext">
+            <h4 class="main-lib_title">Lorem, ipsum.</h4>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+        </div>
+    </div>
+    <div class="main-lib__book">
+        <img class="main-lib_photo" src="https://picsum.photos/100/130" alt="">
+        <div class="main-lib__booktext">
+            <h4 class="main-lib_title">Lorem, ipsum.</h4>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+        </div>
+    </div>
+</div>
+
+
+    <div class="main-container">
+        <div class="article">
+            <h5>Lorem, ipsum dolor.</h5>
+            <p><small> Lorem ipsum dolor sit.</small></p>
+        </div>
+        <div class="article">
+            <h5>Veniam, in optio?</h5>
+        </div>
+        <div class="article">
+            <h5>Ea, laudantium tenetur.</h5>
+        </div>
+        <div class="article">
+            <h5>Fugiat, sequi magnam.</h5>
+        </div>
+        <div class="article">
+            <h5>Iure, sapiente quas.</h5>
+        </div>
+        <div class="article">
+            <h5>Illum, sunt hic!</h5>
+        </div>
+        <div class="article">
+            <h5>Maiores, ratione quia?</h5>
+        </div>
+        <div class="article">
+            <h5>Ipsa, ab. Aliquam.</h5>
+        </div>
+    </div>
+
+
+
+<div class="aside">Ipsumclub.org</div>
+    
+</main>
+
+
+
+
+<footer>
+<div class="footer-banner">
+<h5 class="footer-banner_h">Journal "Our Library presents"</h5>
+<img class="footer-img" src="https://picsum.photos/100/130" alt="">
+<ul class="footer-nav">
+    <li class="footer-nav_li">
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+    </li>
+    <li class="footer-nav_li">
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+    </li>
+    <li class="footer-nav_li">
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+    </li>
+    <li class="footer-nav_li">
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+    </li>
+    <li class="footer-nav_li">
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+    </li>
+    <li class="footer-nav_li">
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+        <p>lorem2</p>
+    </li>
+</ul>
+</div>
+
+</footer>
+</body>
+</html>
