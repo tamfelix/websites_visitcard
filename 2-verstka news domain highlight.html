@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+
+
+
+body{
+    background: rgba(189, 189, 176, 0.413);
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 1300px;
+}
+
+
+
+/* TOP MENU */
+.top-menu{
+}
+
+.top-ads{
+    background: rgb(232, 244, 4);
+    color:#fff;
+    height: 20px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0.6rem;
+    position: relative;
+}
+
+.top-ads p{
+    position: absolute;
+    top:-5px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
+.top-menu__header{
+    color:rgb(59, 58, 58);
+    text-align: center;
+    font-family: 'roboto Condensed', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* MAIN PAGE */
+
+.main-content{
+    width: 1200px;
+    margin-left: 20px;
+    background: #fff;
+}
+
+.topmenu__nav{
+    background: rgb(73, 99, 116);
+}
+
+.topmenu__nav__ul{
+    display: inline-block;
+    border-spacing: 30px;
+    margin: 0px;
+
+}
+
+.topmenu__nav__li{
+    display: inline-block;
+    color: white;
+    padding:5px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'roboto Condensed', sans-serif;
+}
+
+
+a {
+    text-decoration:none;
+    /* color: rgb(41, 161, 191); */
+    font-weight: 900;
+    color: white;
+}
+
+
+/* ADS BANNER */
+
+.banner{
+    padding: 3px; 
+    overflow:auto; 
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.banner__advert{
+    background: url(img/banner1.jpeg); 
+    margin:10px; 
+    padding:10px; 
+    float: left; 
+    width:30%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 220px;
+}
+
+.banner__title{
+    color: rgb(73, 99, 116);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+}
+
+.banner__spoiler{
+    background: rgba(128, 128, 128, 0.295);
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTEXT */
+
+.main-info{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* GREETING SECTION */
+
+.main-info__header{
+    text-align: center;
+    color: rgb(53, 148, 155);
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 25px;
+    width:fit-content;
+    margin: auto;
+}
+
+.main-info__text{
+    padding: 20px;
+    height: 400px;
+}
+
+span{
+    color: rgb(236, 157, 157);
+}
+
+.highlight{
+    background: linear-gradient(180deg, white 55%, rgb(185, 245, 4)55%);
+}
+
+/* NEWS SECTION */
+
+.main-news{    
+    margin-left: 150px;
+    margin-right: 150px;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="top-menu"></div>
+        <div class="top-ads">
+            <p>Some text</p> 
+        </div>
+        <header>
+            <h4 class="top-menu__header">Наш замечательный сайт</h4>
+        </header>
+        
+
+
+<div class="main-content">
+
+        <nav class="topmenu__nav">
+            <ul class="topmenu__nav__ul">
+                    <li class="topmenu__nav__li">
+                        <a href="#">Основная</a>
+                    </li>
+                    
+                    <li class="topmenu__nav__li">
+                        <a href="#">Курсы</a>
+                    </li>
+                    <li class="topmenu__nav__li">
+                        <a href="#">О Центре</a></li>
+                    <li class="topmenu__nav__li">
+                        <a href="#">Контакты</a>
+                    </li>
+            </ul>
+        </nav>
+        
+<div>
+    
+<!-- ADS SECTION -->
+
+    <div class="banner">
+            <div class="banner__advert">
+                    <h3 class="banner__title">Ближайшие курсы</h3>
+                    <p class="banner__spoiler">Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores perspiciatis, dignissimos. Doloremque ullam perferendis, eligendi autem, tempora deserunt.</p>
+                    <a href="#">Читать далее..</a>
+            </div>
+                
+            <div class="banner__advert" >
+                    <h3 class="banner__title">Курсы со скидкой</h3>
+                    <p class="banner__spoiler">Voluptas, cupiditate?</p>
+                    <p>Ratione dolor illum cum perferendis voluptates unde, necessitatibus quaerat quae odit adipisci ducimus minus libero quo, corrupti rerum.</p>
+                    <a href="#">Читать далее..</a>
+            </div>
+                
+            <div class="banner__advert">
+                    <h3 class="banner__title">Популярные курсы</h3>
+                    <p class="banner__spoiler">Culpa, officiis.</p>
+                    <p>Voluptas iure id facilis impedit totam sapiente aspernatur, in culpa accusantium laborum sint repellendus, voluptatem eos mollitia consectetur?</p>
+                    <a href="#">Читать далее..</a>
+            </div>
+    </div>
+
+    <!-- /* GREETING SECTION */ -->
+
+    <div class="main-info">
+        <div class="main-info__text">
+                    <h2 class="main-info__header highlight">Приветcтвуем Вас</h2>
+                    <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Error nisi quo corporis quibusdam. Tempora, tempore. Aspernatur necessitatibus dolores cumque, voluptas non quibusdam voluptatem perspiciatis saepe, officia velit ipsam consequatur! Dignissimos.</p>
+                    <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Illum neque aliquid reprehenderit rem eum ex officiis tenetur! Quod pariatur ipsam ullam delectus accusantium. Illum ad impedit totam natus quasi non ipsa sunt, ratione praesentium, debitis iusto error voluptate, neque rem recusandae veritatis dolor laborum consectetur ab maxime earum. Beatae atque, cumque placeat quae enim distinctio doloribus commodi. Rerum, aperiam. Fuga!</p>
+                    <a href="#">Читать далее..</a>
+        </div>
+                
+    </div>      
+        
+
+<!-- /* NEWS SECTION */ -->
+
+    <div class="main-news">
+                <h2 class="main-info__header highlight">Новости</h2>
+                <div>
+                        <span>21 ноябрь 2016</span>
+                        <p><a href="#">Lorem ipsum dolor.</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                        <span>22 ноябрь 2016</span>
+                        <p><a href="#">Facere, corporis, possimus?</a></p>
+                        <p>Placeat dolore amet deleniti, quas est vero magnam.</p>
+                </div>
+                <a href="#">Читать далее..</a>
+    </div>
+
+</div>    
+            
+
+<!-- FOOTER -->
+
+<footer style="background: #eee; padding: 5px">
+    <p>
+        lorem3 <a href="#">lorem2</a>
+    </p>
+</footer>
+
+
+</body>
+
+</html>
