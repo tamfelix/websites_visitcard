@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+<style>
+:root{
+
+    --p-color1: rgba(128, 128, 128, 0.262);
+    --p-color2: rgba(192, 192, 192, 0.228);
+    --p-color3: rgba(0, 128, 0, 0.173);
+    --p-color4: rgb(178, 230, 241);
+    --p-color5: #fff;
+    --p-color6: rgba(172, 204, 172, 0.968);
+    --bg-color0: rgb(42, 58, 80);
+    --bg-color1:rgba(134, 182, 187, 0.249);
+}
+
+div{
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/IpHpzZX.jpeg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* TOP MENU */
+
+.topmenu{
+    height: 80px;
+    width: max-content;
+    border-radius: 10px 10px 100px 0;
+    background: var(--bg-color0);
+    box-shadow: honeydew 3px 3px 13px;
+    position: fixed;
+    left:27px;
+    top: 20px;   
+}
+
+.topmenu__ul{
+    margin: 0 10px 0 10px;
+    padding: 0;
+}
+
+.topmenu__li{
+    display:inline-block;
+    margin: 20px 10px 10px 0px;
+    background: var(--p-color3);
+    padding: 10px;
+    color: var(--p-color5);
+    border-radius: 7px 7px 20px 7px;
+    width: max-content;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+/* HEADER */
+
+.header__main, .header__main_new{
+    text-align: center;
+    color: var(--p-color5);
+    /* text-transform: uppercase; */
+    font-family: 'MuseoModerno', cursive;
+    font-size: 3em;
+    margin: 140px 0 0 180px;
+    text-transform: uppercase;
+}
+
+.header__main_new{
+    font-family: 'orbitron', sans-serif;
+    font-size: 0.9rem;
+    font-stretch: thin;
+    margin: 0 0 50px 180px;
+}
+
+
+
+    /* MAIN CONTENT */
+
+.main-container{
+    width: max-content;
+    height: max-content;
+    margin-left: 20px;
+}
+
+.main-wrapper__nav{
+    height: 30px;
+    background: rgba(0, 0, 0, 0.356);
+    box-shadow: var(--p-color4) 0px 0px 4px;
+    width: 100%;
+
+}
+.main-wrapper__nav_ul{
+    padding: 0 0 0 30px;
+    width: 100%;
+}
+
+.main-wrapper__nav_li {
+    display: inline-block;
+    color: var(--p-color6);
+    text-transform: uppercase;
+    padding: 6px 6px 6px 0;
+    font-size: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.main-wrapper_skin{
+    background: var(--bg-color1);
+    padding: 30px;
+    height: max-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: max-content max-content max-content;
+    grid-gap:20px;
+}
+
+.main-wrapper__item {
+    padding: 10px;
+    box-shadow: var(--p-color4) 3px 3px 13px;
+    /* margin: 10px; */
+    color: var(--p-color5);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.a{
+    background:var(--p-color1);
+}
+.b{
+    background: var(--p-color2);
+}
+.c{
+    background: var(--p-color3);
+}
+
+.header-section{
+    grid-column: 1 / 4; 
+    grid-row: 1 / 2;
+    color: var(--p-color4);
+    text-transform: uppercase;
+    text-align: center;
+    height: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.left-sidebar{
+    grid-column: 1/2;
+    grid-row: 2/10;
+}
+
+.right-sidebar{
+    grid-column: 3 / 4;
+    grid-row: 2 / 10;
+}
+
+.central-section{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.footer-section{
+    grid-column: 1/4;
+    grid-row: 10/10;
+}
+/* FOOTER */
+
+/* .footer__separator{
+    border-bottom: 1px solid var(--p-color4);
+    width: 220px;
+    margin: 30px 0 20px 30px;
+    box-shadow: var(--p-color4) 0px 0px 2px;
+} */
+
+footer{ 
+    margin-top: 80px;
+}
+
+.footer__text{
+    color: var( --p-color4);
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+    font-size: 0.9rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+</style>
+
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Orbitron&family=Quicksand:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<!-- TOP MENU -->
+
+<header>
+    <nav class="topmenu">
+        <ul class="topmenu__ul">
+            <li class="topmenu__li">second life</li>
+            <li class="topmenu__li">immersion</li>
+            <li class="topmenu__li">options</li>
+            <li class="topmenu__li">login</li>
+        </ul>
+    </nav>
+
+    <h4 class="header__main">Planet Race</h4>
+    <h5 class="header__main_new">- immerse into new reality -</h5>
+
+
+
+</header>
+
+<!-- ARTICLES -->
+<main class="main-container">
+<div class="main-wrapper__nav">
+    <ul class="main-wrapper__nav_ul">
+        <li class="main-wrapper__nav_li">article1</li>
+        <li class="main-wrapper__nav_li">article2</li>
+        <li class="main-wrapper__nav_li">article3</li>
+        <li class="main-wrapper__nav_li">article4</li>
+        <li class="main-wrapper__nav_li">article5</li>
+    </ul>
+</div>
+    
+<div class="main-wrapper_skin">
+    <div class="item header-section"><h3>Latest posts:</h3></div>
+    <div class="main-wrapper__item a left-sidebar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, culpa unde sequi possimus ipsam eius facilis dolorem at, tempotate ea, totam nesciunt adipisci fuga dolor dolore quam quo voluptates.</div>
+    <div class="main-wrapper__item b">Ipsum molestiae provident repellat officia quaerat libero illum totam et distinctio tempora? Velit provident animi, quo vitae maxime quis unde esse eaque est rem aut laboriosam exercitationem quaerat quibusdam dolores!</div>
+    <div class="main-wrapper__item c right-sidebar">Voluptas enim modi dolores nobis placeat obcaecati unde aut, consequuntur at aperiam dignissimos adipisci perspiciatis. Archuisquam incidunt ipsum atque est possimus perferendis cum quidem animi, officia enim illum?</div>
+    <div class="main-wrapper__item a central-section">Excepturi quaerat laborum enim facere alias, qui quia sed iusto explicabo ad asperiores, aliquam nihil deleniti. Eos, reiciendis? Provident beatae officiis, cumque voluptatibus asperiores perferendis unde excepturi placeat eius aitecto.</div>
+    <div class="main-wrapper__item b ">Aperinemo illum laudantium quia veritatis nisi, optio at libero dicta ducimus minima qui neque nobis? A cum modi iure maiores blanditiis fugiat possimus, nesciunt soluta quia, porro nam?</div>
+    <div class="main-wrapper__item c">Animi, provident praesentium obcaecati accusamus ipsa rem, amet nostrum distinctio similique, quod non rerum aut iure esse fuga odit dolorum. Eveniet fuga expedita fugiat, illo debitis reiciendis earum excepturi eaque!</div>
+    <div class="main-wrapper__item a">Quo facere tenetur quam! Laudantium, modi id! Adipisci reprehenderit voluptate nulla debitis quasi illum tempora, temporibus sapiente! Ipsum rem voluptas vitae. Modi blanditiis maxime est animi vero quas vitae accusamus.</div>
+    <div class="main-wrapper__item b">Tempore officiis laboriosam nihil aspernatur facilis? Magnam consectetur laboriosam doloremque quod, enim et fugiat. Veritatis vero numquam perferendis a repudiandae quisquam adipisci, ut eveniet excepturi, maiores deleniti ipsa odio officia?</div>
+    <div class="main-wrapper__item c">Hic, serunt sed molestiae cumque? Maxime deleniti dolore eos in consequuntur atque saepe commodi quia illum hic, explicabo esse iure voluptatum! Sed suscipit ut rerum labore esse!</div>
+    <div class="main-wrapper__item a footer-section">Quam sint eius vitae quibusdam illum labore quis distinctio alias libero, maxime assumenda reprehenderit aspernatur eludantium facere numquam. Eos repudiandae culpa esse ad, consectetur blanditiis accusamus quas error beatae!</div>
+</div>
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+    <!-- <div class="footer__separator"></div> -->
+    <div class="footer__text">&copy; pokemon 2021</div> 
+</footer>
+
+</body>
+</html>
