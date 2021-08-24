@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+/* GENERAL */
+:root{
+    --b-color1:rgb(74, 98, 126);
+    --bg-color2:rgb(77, 107, 171);
+    --bg-color3:rgb(78, 198, 248);
+    --bg-color4:rgb(20, 40, 63);
+    --bg-color5:rgb(87, 203, 200);
+    --bg-color6:rgb(197, 205, 208);
+    --bg-color7:rgb(78, 100, 124);
+    --bg-color8:rgb(234, 96, 96);
+    --p-color1:rgb(78, 75, 75);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:var(--b-color1);
+    position: relative;    
+    font-family: Verdana, sans-serif;
+    color:var(--p-color1);
+}
+
+.site-wrapper{
+   justify-content: center;   /* центровка!! */
+   align-content: stretch; /* центровка!! */
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 42% 42%;
+    grid-template-rows: 60px 600px 400px;
+    grid-template-areas: 
+    "header header"
+    "nav section"
+    "footer footer";
+    grid-gap: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    /* margin-left: 12%; */
+}
+
+/* HEADER */
+.item-header{
+    grid-area: header;
+    background: #fff;
+    display: inline-grid;
+    grid-template-columns:60px 70px 70px 70px 70px 70px 1fr 150px 60px;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "menu home store blog about contact search social user";
+
+}
+
+.item-header__menu{
+    grid-area: menu;
+    background: var(--bg-color5);
+    margin: auto;
+    padding: 21px 20px 20px 20px;
+}
+
+.item-header__home{
+    grid-area: home;
+    margin: auto;
+    
+}
+
+.item-header__store{
+    grid-area: store;
+    margin: auto;
+}
+
+.item-header__blog{
+    grid-area: blog;
+    margin: auto;
+}
+
+.item-header__about{
+    grid-area: about;
+    margin: auto;
+}
+
+.item-header__contact{
+    grid-area: contact;
+    margin: auto;
+}
+
+.item-header__search{
+    grid-area: search;
+    text-align: right;
+    padding: 20px;
+}
+
+.item-header__social{
+    grid-area: social;
+    border-left:1px solid var(--bg-color6);
+    padding: 20px;
+}
+.item-header__user{
+    grid-area: user;
+    border-left:1px solid var(--bg-color6);
+    margin: auto;
+    padding: 20px;
+}
+
+/* NAVIGATION GRID (navigation panel nav1+nav2 )*/
+
+.item-nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "nav1 nav2";
+}
+
+
+
+/* NAVIGATION FIRST PANEL */
+
+.item-nav__nav1{
+    grid-area: nav1;
+    background:var(--bg-color6);
+    display: inline-grid;
+    grid-template-columns:100%;
+    grid-template-rows: (repeat, 10);
+
+}
+
+.nav1{
+    border-bottom: 1px solid var(--bg-color6);
+    
+}
+.nav1 p{
+    padding-top: 20px;
+    margin-left: 40px;}
+
+
+.item-nav__nav1_home{
+    background:#fff;
+}
+.item-nav__nav1_store{
+    background:#fff;
+}
+.item-nav__nav1_blog{
+    background:#fff;
+}
+.item-nav__nav1_community{
+    background:#fff;
+}
+.item-nav__nav1_contests{
+    background:#fff;
+}
+.item-nav__nav1_about{
+    background:#fff;
+}
+.item-nav__nav1_contact{
+    background:#fff;
+}
+.item-nav__nav1_tel{
+    color: #fff;
+}
+.item-nav__nav1_address{
+    color: #fff;
+}
+.item-nav__nav1_email{
+    color: #fff;
+}
+
+
+
+/* NAVIGATION SECOND PANEL */
+
+.item-nav__nav2{
+    grid-area: nav2;
+    background: var(--bg-color4);
+    display: inline-grid;
+    grid-template-columns:100%;
+    grid-template-rows: (repeat, 17);
+}
+
+.nav2{
+    color: #fff;
+    z-index: 7;
+    line-height: 0.4rem;
+    
+}
+.nav2 p{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.item-nav__nav2_tech{
+    color: var( --bg-color5);
+} 
+ 
+.item-nav__nav2_mobile{
+    border-bottom: 1px solid var(--bg-color7);
+} 
+
+.item-nav__nav2_ent{
+    color: var( --bg-color5);
+} 
+
+.item-nav__nav2_sport{
+    border-bottom: 1px solid var(--bg-color7);
+} 
+
+.item-nav__nav2_business{
+    color: var( --bg-color5);
+} 
+
+
+.item-nav__nav2_media{
+    border-bottom: 1px solid var(--bg-color7);
+} 
+.item-nav__nav2_lifestyle{
+    color: var( --bg-color5);
+}
+
+
+
+/* SECTION */
+
+.item-section{
+    grid-area: section;
+}
+
+.section-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 49% 48%;
+    grid-template-rows: 23% 23% 23% 23.5%;
+    grid-template-areas: 
+    "social fb"
+    "social twitter"
+    "login login"
+    "newsletter newsletter";
+    grid-gap: 15px;
+}
+
+.section-wrapper_social{
+    grid-area: social;
+    background: #fff;
+}
+
+
+/* FACEBOOK SECTION */
+.section-wrapper_fb{
+    grid-area: fb;
+    background: var(--bg-color2);
+    position: relative;
+}
+
+.section-wrapper_fb__logo{
+    float: left;
+    padding: 10px 0 30px 30px;
+    font-size: 3rem;
+    color: #fff;
+
+}
+
+.section-wrapper_fb__follow{
+    position: absolute;
+    top: 100px;
+    bottom: 10px;
+    left: 20px;
+    color:white;
+}
+
+.section-wrapper_fb__text{
+    position: absolute;
+    top: 100px;
+    bottom: 10px;
+    right: 50px;
+    color:white;
+}
+
+.section-wrapper_fb__expand{
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 100px;
+    bottom: 10px;
+    right: 15px;
+    color:white;
+    padding: .5px 0 0 3.5px;
+}
+
+.section-wrapper_twitter{
+    grid-area: twitter;
+    background: var(--bg-color3);
+}
+
+
+
+/* LOGIN BANNER */
+
+.section-wrapper_login{
+    grid-area: login;
+    background: #fff;
+}
+.item-login__header{
+    margin: auto;
+    width: 120px;
+    padding: 15px;
+}
+.item-login__text{
+    margin: auto;
+    text-align: center;
+    font-size: .8rem;
+    padding: 0 10px 0 10px;
+}
+
+.item-login__logos{
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.item-login__logos_new{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: #000;
+    display: inline-block;
+
+}
+
+/* NEWSLETTER BANNER */
+
+.section-wrapper_newsletter{
+    grid-area: newsletter;
+    background: #fff;
+}
+
+.item-newsletter__header{
+    margin: auto;
+    width: 120px;
+    padding: 15px;
+}
+.item-newsletter__text{
+    margin: auto;
+    text-align: center;
+    font-size: .8rem;
+    padding: 0 10px 0 10px;
+}
+
+.item-newsletter__form{
+    margin: auto;
+    margin-top: 10px;
+    width: 350px;
+
+}
+
+.item-newsletter__button{
+    background:var(--bg-color8);
+    border: none;
+    color: #fff;
+    width: 80px;
+    height: 35px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.item-newsletter__email{
+    height: 35px;
+    width: 250px;
+    border: 1px solid var(--bg-color6);
+    margin-right: 10px;
+   
+}
+
+
+
+/* FOOTER */
+
+.item-footer{
+    grid-area: footer;
+    background: url(https://picsum.photos/900/400);
+    color: #fff;
+}
+
+.item-footer__header{
+    padding: 50px 0 15px 100px;
+}
+
+.item-footer__text{
+    width: 300px;
+    padding: 15px 0 0 100px;
+}
+
+.item-footer__button{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 140px;
+    height: 50px;
+    margin: 20px 0 0 100px;
+    font-size: 1.4rem;
+}
+
+
+.item-footer__arrows{
+    height: 70px;
+    margin: auto;
+    margin-top: -150px;
+    color: grey;
+}
+
+.item-footer__arrow1{
+    width: 30px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    float: right;
+    margin-top: 10px;
+    background: #fff;
+    padding: 15px 7px;
+   
+}
+
+.item-footer__arrow2{
+    width: 30px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+    float: left;
+    margin-top: 10px;
+    background: #fff;
+    padding: 15px 7px;
+}
+
+.item-footer__circles{
+    width: 90px;
+    margin: auto;
+   margin-top: 150px;
+}
+
+.item-footer__circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+
+}
+
+
+    </style>
+    <title>fullkit</title>
+</head>
+<body>
+    
+
+<div class="site-wrapper">
+
+
+    <!-- HEADER -->
+
+
+    <div class="item-header">
+        <div class="item-header__menu">///</div>
+        <div class="item-header__home">Home</div>
+        <div class="item-header__store">Store</div>
+        <div class="item-header__blog">Blog</div>
+        <div class="item-header__about">About</div>
+        <div class="item-header__contact">Contact</div>
+        <div class="item-header__search">search</div>
+        <div class="item-header__social">social</div>
+        <div class="item-header__user">user</div>
+    </div>
+    
+    <!-- NAVIGATION MENU1 -->
+    
+
+
+
+    <div class="item-nav">
+        <div class="item-nav__nav1">
+            <div class="item-nav__nav1_home nav1">
+                <p> Home</p>
+            </div>
+            <div class="item-nav__nav1_store nav1">
+                <p> Store</p>
+            </div>
+            <div class="item-nav__nav1_blog nav1">
+                <p>Blog</p> 
+            </div>
+            <div class="item-nav__nav1_community nav1">
+                <p>Community</p> 
+            </div>
+            <div class="item-nav__nav1_contests nav1">
+               <p> Contests</p>
+            </div>
+            <div class="item-nav__nav1_about nav1">
+                <p>About</p>
+            </div>
+            <div class="item-nav__nav1_contact nav1">
+                <p>Contact</p>
+            </div>
+            <div class="item-nav__nav1_tel nav1">
+                <p>(921)555-1234</p>
+            </div>
+            <div class="item-nav__nav1_address nav1">
+                <p>address</p>
+            </div>
+            <div class="item-nav__nav1_email nav1">
+                <p>hello@website.com</p>
+            </div>
+        </div>
+        <div class="item-nav__nav2"></div>
+    </div>
+    
+
+   <!-- NAVIGATION MENU2 -->
+    
+   <div class="item-nav">
+    <div class="item-nav__nav2">
+        <div class="item-nav__nav2_tech nav2">
+            <p> Tech</p>
+        </div>
+        <div class="item-nav__nav2_soft nav2">
+            <p> Software & Apps</p>
+        </div>
+        <div class="item-nav__nav2_gadgets nav2">
+            <p>Gadgets</p> 
+        </div>
+        <div class="item-nav__nav2_mobile nav2">
+            <p>Mobile</p> 
+        </div>
+        <div class="item-nav__nav2_ent nav2">
+           <p>Entertainment</p>
+        </div>
+        <div class="item-nav__nav2_film nav2">
+            <p>Film</p>
+        </div>
+        <div class="item-nav__nav2_gaming nav2">
+            <p>Gaming</p>
+        </div>
+        <div class="item-nav__nav2_music nav2">
+            <p>Music</p>
+        </div>
+        <div class="item-nav__nav2_sport nav2">
+            <p>Sport</p>
+        </div>
+        <div class="item-nav__nav2_business nav2">
+            <p>Business</p>
+        </div>
+        <div class="item-nav__nav2_jobs nav2">
+            <p>Jobs</p>
+         </div>
+         <div class="item-nav__nav2_marketing nav2">
+             <p>Marketing</p>
+         </div>
+         <div class="item-nav__nav2_media nav2">
+             <p>Media</p>
+         </div>
+         <div class="item-nav__nav2_lifestyle nav2">
+             <p>Lifestyle</p>
+         </div>
+         <div class="item-nav__nav2_home nav2">
+             <p>Home</p>
+         </div>
+         <div class="item-nav__nav2_health nav2">
+             <p>Health & Fitness</p>
+         </div>
+         <div class="item-nav__nav2_travel nav2">
+            <p>Travel & Leasure</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+    
+    <!-- SECTION WITH BANNERS-->
+    
+    <div class="item-section">
+        <div class="section-wrapper">
+
+            <!-- SOCIAL BANNER -->
+            <div class="section-wrapper_social">social</div>
+
+            <!-- FACEBOOK BANNER -->
+            <div class="section-wrapper_fb">
+                <div class="section-wrapper_fb__logo">f</div>
+                <div class="section-wrapper_fb__follow">156K</div>
+                <div class="section-wrapper_fb__text">Follow</div>
+                <div class="section-wrapper_fb__expand">+</div>
+            </div>
+
+
+            <!-- TWITTER BANNER -->
+            <div class="section-wrapper_twitter">twitter</div>
+            
+            <!-- LOGIN BANNER -->
+            <div class="section-wrapper_login">
+        
+                <h3 class="item-login__header">Sign-in</h3>
+                <p class="item-login__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, consequatur.</p>
+                <div class="item-login__logos">
+                    <div class="item-login__logos_new fb">fb</div>
+                    <div class="item-login__logos_new tw">tw</div>
+                    <div class="item-login__logos_new gm">gm</div>
+                    <div class="item-login__logos_new in">in</div>
+                </div>
+            </div>
+            
+             <!-- NEWSLETTER BANNER -->
+            
+            <div class="section-wrapper_newsletter">
+                <h3 class="item-newsletter__header">Newsletter</h3>
+                <div class="item-newsletter__text">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                <div class="item-newsletter__form">
+                    <input class="item-newsletter__email" type="email" name="email type">
+                    <input class="item-newsletter__button" type="button" value="sign up">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="item-footer">
+        <h1 class="item-footer__header">Sequi! footer</h1>
+        <p class="item-footer__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Saepe delectus, cupiditate voluptates in aspernatur dolore!
+        </p>
+        <input class="item-footer__button" type="button" value="view more">
+        <div class="item-footer__arrows">
+            <div class="item-footer__arrow1">></div>
+            <div class="item-footer__arrow2">&lt;</div>
+        </div>
+
+        <div class="item-footer__circles">
+            <input class="item-footer__circle" type="button" value="left">
+            <input class="item-footer__circle" type="button" value="right">
+            <input class="item-footer__circle" type="button" value="scroll left">
+            <input class="item-footer__circle" type="button" value="scroll right">
+        </div>
+    </div>
+</div>
+</body>
+</html>
