@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BEM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+/* GENERAL SETTINGS */
+:root{
+    --h-color1: #004b64;
+    --h-color2:#191919;
+    --h-color3: #489cb7;
+    --h-color4:  #ff532f;
+    --bg-color1:rgba(128, 128, 128, 0.295);
+    --bg-color2:#fcfcfc;
+    --bg-color3hew:#eae2d9;
+    --bg-color4:#fddbd4;
+    --bg-color5:#e6ed0a;
+}
+
+body{
+    background: var(--bg-color3hew);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.highlight{
+    background: linear-gradient(180deg, var(--bg-color2)55%, var(--bg-color5)55%);
+}
+
+a {
+    text-decoration:none;
+    font-weight: 900;
+    color: var(--bg-color2);
+}
+
+/* HEADER */
+
+
+.top-header__ads{
+    background: var(--bg-color4);
+    color:var(--bg-color2);
+    height: 20px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0.6rem;
+    position: relative;
+}
+
+.top-header__p{
+    position: absolute;
+    top:-5px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
+.top-header_header{
+    color:var(--h-color1);
+    text-align: center;
+    font-family: 'roboto Condensed', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+/*  NAVIGATION MENU */
+
+.main-content_wrapper{
+    width: 1200px;
+    margin-left: 20px;
+    background: var(--bg-color2);
+}
+
+.main-content__nav{
+    background: var(--h-color1);
+}
+
+.main-content__nav__ul{
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+}
+
+.main-content__nav__li{
+    /* display: inline-block; */
+    color: var(--bg-color2);
+    padding:5px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'roboto Condensed', sans-serif;
+    display: inline;
+}
+
+
+
+/* BANNER */
+
+.banner__wrapper{
+    width: 900px;
+    margin: 50px 100px 50px 100px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 270px;
+    grid-column-gap: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px grey;
+}
+.banner__adcontainer{
+    background: url(img/banner1.jpeg); 
+    margin:10px; 
+    padding:10px; 
+    float: left; 
+    width:100%;
+}
+
+.banner__title{
+    color: var(--h-color1);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background:linear-gradient(90deg, var(--bg-color5) 65%, transparent);
+    /* opacity: .7; */
+    margin: 10px;
+    padding: 0;
+
+}
+
+.banner__spoiler{
+    background: var(--h-color3);
+    width: 40%;
+    margin: 25px 0 25px 0;
+    padding: 0;
+}
+
+
+.banner__article{
+    font-size: 0.9rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(5, 5, 5);
+}
+
+.banner__expand{
+    padding-left: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* MAIN CONTEXT */
+
+.main-info{
+    margin: 0 150px 0 100px;
+}
+
+/* GREETING SECTION */
+
+
+.main-info__wrapper{
+    padding: 10px 60px 20px 20px;
+    height: 300px;
+}
+
+.main-info__header{
+    text-align: center;
+    color: var(--h-color3);
+    text-transform: uppercase;
+    padding: 10px 25px 10px 5px;
+    width:fit-content;
+    margin: auto;
+}
+
+.main-info__text, .main-info__a{
+    margin-bottom: 20px;
+    color:var(--h-color2);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+span{
+    color: var(--h-color4);
+    font-weight: 400;
+}
+
+
+
+
+/* NEWS SECTION */
+
+.main-news{    
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.main-news__text{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+}
+
+.main-news__spoiler{
+    width: max-content;
+    line-height: 30px;
+    background: linear-gradient(180deg, var(--bg-color2)55%, var(--bg-color5)55%);
+}
+
+.main-news__date{
+font-size: 0.9rem;
+}
+
+
+
+/* FOOTER */
+footer{
+    color: var(--bg-color2);
+    margin: 50px 0 0 0;
+    height: 20px;
+    background: #eee;
+    padding-left: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+    </style>
+</head>
+
+
+
+<body>
+    <!-- HEADER  -->
+
+    <div class="top-header">
+        <div class="top-header__ads">
+            <p class="top-header__p">Some text</p> 
+        </div>
+        <header>
+            <h4 class="top-header_header">Наш замечательный сайт</h4>
+        </header>
+    </div>
+
+
+    <div class="main-content_wrapper">
+        <nav class="main-content__nav">
+            <ul class="main-content__nav__ul">
+                    <li class="main-content__nav__li">
+                        <a href="#">Основная</a>
+                    </li>
+                    
+                    <li class="main-content__nav__li">
+                        <a href="#">Курсы</a>
+                    </li>
+                    <li class="main-content__nav__li">
+                        <a href="#">О Центре</a></li>
+                    <li class="main-content__nav__li">
+                        <a href="#">Контакты</a>
+                    </li>
+            </ul>
+        </nav> 
+    
+    
+    <!-- ADS BANNER SECTION -->
+
+    <div class="banner__wrapper">
+            <div class="banner__adcontainer">
+                    <h3 class="banner__title">Ближайшие курсы</h3>
+                    <p class="banner__spoiler">Lorem ipsum.</p>
+                    <p class="banner__article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores deserunt.</p>
+                    <a class="banner__expand" href="#">Читать далее..</a>
+            </div>
+                
+            <div class="banner__adcontainer" >
+                    <h3 class="banner__title">Курсы со скидкой</h3>
+                    <p class="banner__spoiler">Voluptas, cupiditate?</p>
+                    <p class="banner__article">Ratione dolor illum cum perferendis voluptates unde, necessitatio quo, corrupti rerum.</p>
+                    <a class="banner__expand" href="#">Читать далее..</a>
+            </div>
+                
+            <div class="banner__adcontainer">
+                    <h3 class="banner__title">Популярные курсы</h3>
+                    <p class="banner__spoiler">Culpa, officiis.</p>
+                    <p class="banner__article">Voluptas iure id facilis impedit totam sapiente aspernatur, in culpa accusantium laborum sint repellendus, voluptatem eos mollitia consectetur?</p>
+                    <a  class="banner__expand" href="#">Читать далее..</a>
+            </div>
+    </div>
+
+    <!-- /* GREETING SECTION */ -->
+
+    <div class="main-info">
+        <div class="main-info__wrapper">
+                    <h2 class="main-info__header highlight">Приветcтвуем Вас</h2>
+                    <p class="main-info__text"><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Error nisi quo corporis quibusdam. Tempora, tempore. Aspernatur necessitatibus dolores cumque, voluptas non quibusdam voluptatem perspiciatis saepe, officia velit ipsam consequatur! Dignissimos.</p>
+                    <p class="main-info__text "><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Illum neque aliquid reprehenderit rem eum ex officiis tenetur! Quod pariatur ipsam ullam delectus accusantium. Illum ad impedit totam natus quasi non ipsa sunt, ratione praesentium, debitis iusto error voluptate, neque rem recusandae veritatis dolor laborum consectetur ab maxime earum. Beatae atque, cumque placeat quae enim distinctio doloribus commodi. Rerum, aperiam. Fuga!</p>
+                    <a class="main-info__a" href="#">Читать далее..</a>
+        </div>         
+    </div>      
+        
+
+    <!-- /* NEWS SECTION */ -->
+
+    <div class="main-news">
+                <h2 class="main-info__header highlight">Новости</h2>
+                <div class="main-news__text">
+                        <p class="main-news__spoiler"><a class="main-news__text" href="#">Lorem ipsum dolor.</a></p>
+                        <span class="main-news__date">21 ноябрь 2016</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="main-news__text">
+                        <p class="main-news__spoiler"><a  class="main-news__text" href="#">Facere, corporis, possimus?</a></p>
+                        <span class="main-news__date">22 ноябрь 2016</span>
+                        <p>Placeat dolore amet deleniti, quas est vero magnam.</p>
+                </div>
+                <a class="main-info__a" href="#">Читать далее..</a>
+    </div>
+   
+            
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            &copy; <a href="#">Lorem, ipsum. </a>
+        </p>
+    </footer>
+
+</div>
+</body>
+
+</html>
