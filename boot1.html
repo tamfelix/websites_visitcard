@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+<style>
+:root{ 
+    --h-color1 :rgba(200, 255, 47, 0.694);
+    --h-color2 :#b7f707;
+    --h-color3 :#f707b7;
+    --h-color4 :#07b7f7;
+    --h-color5 :#f74707;
+    --h-color6: #f3f707;
+    --h-color7 :#b1c722;
+    --h-color8 :rgba(159, 177, 111, 0.694);
+    
+}
+    
+body{
+    max-width: 1480px;
+}
+
+.jumbotron, 
+.search, 
+.first-article__header,
+.header3{
+    color: var(--h-color2);
+}
+
+
+.jumbotron,
+.menu,
+.nav-item,
+.banner__header, 
+.banner-button, 
+.header3{
+    text-transform:uppercase;
+}
+
+    /* HEADER         */
+
+
+
+     /* TOP NAVIGATION */
+
+.nav-item{
+    height: 40px;
+    border-radius: 0 0 0 30px;
+    border-bottom: 3px solid var(--h-color1);
+    display: inline;
+ 
+}
+
+.nav-item a{
+    color: grey;
+}
+
+.search{
+    width: 120px;            
+    border: 3px solid var(--h-color1);
+}
+
+
+    /* BANNER 1 */
+
+.banner{
+    background:url(img/white-wave-background-abstract-minimal-exterior-design-white-wave-background-abstract-minimal-exterior-design-creative-118020829.jpeg);
+}
+
+
+.banner__header{
+                color:var(--h-color4);
+            }
+
+
+.banner-button{
+                width: 150px;
+                height: 50px;
+                background: var(--h-color4);
+                box-shadow: inset 1px 2px 0 1px rgb(76, 211, 245), 1px 2px 0 1px rgb(34, 129, 184);
+                border: transparent;
+            }
+
+ /* MAIN SECTION */
+
+.menu{
+                background: var(--h-color5);
+                width: max-content;
+                color: #fff;
+            }
+
+
+
+.subitem_1{
+                background: var(--h-color4);
+            
+            }
+
+
+
+ /* BANNER 2 */
+
+.banner2{
+    background:url(img/white-wave-background-abstract-minimal-exterior-design-creative-architectural-concept-d-illustration-173211671.jpeg); 
+    height: 200px;
+}
+
+            /* FOOTER */
+
+.footer-section{
+    background: var(--h-color8);
+    color: #fff;
+}
+</style>
+
+
+<title>boot1</title>
+
+
+</head>
+
+<body class="m-auto">
+
+    <!-- HEADER -->
+
+<div class="jumbotron jumbotron-fluid m-2">
+    <h1 class="display-4">jumbo</h1>
+    <p class="lead mb-4">Lorem ipsum dolor sit amet adipis?
+    </p>
+</div>
+
+<div class="container-fluid">
+
+    <!-- NAV MENU -->
+
+    <div class="row">
+                <ul class="navbar col-md-7 p-0 pb-2">
+                    <li class="nav-item  w-10 m-3 p-1"><a class="nav-link" href="#"> Lorem.</a></li>
+                    <li class="nav-item  w-10 m-3 p-1"><a class="nav-link" href="#">Lorem.</a></li>
+                    <li class="nav-item  w-10 m-3 p-1"><a class="nav-link" href="#">Lorem.</a></li>
+                    <li class="nav-item  w-10 m-3 p-1"><a class="nav-link" href="#">Lorem.</a></li>
+                    <li class="nav-item  w-10 m-3 p-1"><a class="nav-link" href="#">Lorem.</a></li>
+                    <li class="nav-item  w-10 m-3 p-1"><a class="nav-link" href="#">Lorem.</a></li>
+                </ul>
+
+                <div class="col-md-4"></div>
+                <div class="col-md-1 p-0 m-0">
+                    <input class="search border-3 rounded-pill mt-4" type="search" value="search..">
+                </div>
+    </div>
+
+        <!-- BANNER ROW -->
+
+    <div class="row">
+            <div class="banner col-md-12 col-xs-12 h-25">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <h2 class="banner__header col-md-4 p-3 pt-5 mt-5">All smart fixtures here</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <input class="col-md-1 btn-primary banner-button rounded-pill mt-5 m-3" type="button" value="go!">
+                </div>
+            </div> 
+    </div>
+        
+        
+
+        <!--FIRST  ARTICLES ROW -->
+
+
+    <div class="row pt-5">
+                <div class="container mb-md-5 border-bottom col-md-12 col-xs-12">
+                    
+                    <h1 class="first-article__header col-md-12 col-xs-12">Future awaits you here!</h1>
+            
+                    <div class="row">
+                        <div class="main-articles col-md-8 col-xs-12">
+                            <div class="row pt-5">
+                                <div class="subitem col-md-4 col-xs-4 w-25">
+                                    <h6 class="suitem_1 bg-light">SUBITEM</h6> Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </div>
+                                <div class="subitem col-md-4 col-xs-4 25">
+                                    <h6 class="suitem_1 bg-light">SUBITEM</h6> Lorem ipsum dolor sit, amet consectetur adipisicing.
+                                </div>
+                                <div class="subitem col-md-4 col-xs-4 25">
+                                    <h6 class="suitem_1 bg-light">SUBITEM</h6> Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </div>
+                            </div>
+                        </div>
+
+                
+                
+                        <div class="col-md-4 col-xs-12 pt-5 pb-5">
+                            <h3 class="bg-light">Subtitle2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aspernatur aliquam laborum eveniet maiores totam ullam sed fugiat perferendis iste vc, quia delectus quibusdam voluptate rerum accusantium. Recusandae, natus nisi. Corporis similique labore minus, iste error ipsam! Voluptates, asperiores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+   
+        <!-- PHOTO GALLERY -->
+
+    <div class="row p-3">
+            <h3 class="header3 col-md-12 mb-md-4 pb-4">Subtitle3</h3>
+                <div class="col-md-3 mb-md-4">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://picsum.photos/200/200" alt="">
+                </div>      
+           
+    </div>
+   
+
+        <!-- SECOND ARTICLES ROW -->
+
+    <div class="row p-3 pt-5">
+        <h3 class="header3 mb-md-4 pb-4">Feedback</h3>
+                <div class="col-md-6 col-xs-12">
+                    <h4 class="bg-light">Subtitle1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aspernatur aliquam laborum eveniet maiores totam ullam sed fugiat perferendis iste vero hic, quia dsantium. Recusandae, natus nisi. Corporis similique labore minus, iste error ipsam! Voluptates, asperiores.
+                    </p>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h4 class="bg-light">Subtitle2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aspernatur aliquam laborum eveniet maiores totam ullam sed fugiat perferendis iste vc, quia delectus quibusdam voluptate rerum accusantium. Recusandae, natus nisi. Corporis similique labore minus, iste error ipsam! Voluptates, asperiores.
+                    </p>
+                </div>
+    </div>
+
+        <!-- BANNER -->
+
+    <div class="row p-2 pb-0">
+        <div class="banner2 col-md-12 col-xs-12">
+            <h3 class="banner__header">banner2</h3>
+        </div>
+    </div>
+    
+
+        <!-- FOOTER -->
+
+    <div class="row p-2 pt-0">
+        <footer class="footer-section col-md-12 col-xs-12">
+            &copy; pokemon
+        </footer>
+    </div>
+
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
